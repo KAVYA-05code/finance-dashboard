@@ -1,16 +1,95 @@
-# React + Vite
+# 💰 Finance Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive Finance Dashboard built using React (Vite) and Tailwind CSS. It helps users track income, expenses, and overall balance with a clean and interactive UI.
 
-Currently, two official plugins are available:
+Live Demo: https://finance-dashboard-taupe-omega.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Displays total balance, income, and expenses
+- Automatically calculates financial summary from transactions
+- Shows list of all transactions
+- Differentiates income and expense visually
+- Clean and modern dark UI
+- Responsive design (mobile, tablet, desktop)
+- Smooth hover effects and transitions
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- React.js (Vite)
+- Tailwind CSS
+- Context API (State Management)
+- Vercel (Deployment)
+
+---
+
+## ⚙️ Setup Instructions
+
+1. Clone the repository
+   git clone <https://github.com/KAVYA-05code/finance-dashboard>
+
+2. Navigate to project folder
+   cd finance-dashboard
+
+3. Install dependencies
+   npm install
+
+4. Run development server
+   npm run dev
+
+5. Open in browser
+   http://localhost:5173/
+
+---
+
+## 📁 Project Structure
+
+- components/ → UI components (Dashboard)
+- context/ → Global state management
+- data/ → Initial transaction data
+- App.jsx → Main component
+- main.jsx → Entry point
+- index.css → Styling
+
+---
+
+## 🧠 Approach
+
+- Used Context API for global state management
+- Separated data, logic, and UI for better structure
+- Calculations handled dynamically:
+  - Income = sum of positive values
+  - Expense = sum of negative values
+  - Balance = income + expense
+
+---
+
+## ⚙️ How It Works
+
+- Transactions are stored in global state
+- Each transaction has title and amount
+- Positive values = income
+- Negative values = expense
+- UI updates automatically when data changes
+
+---
+
+## 🔮 Future Improvements
+
+- Add new transaction feature
+- Delete transactions
+- Add charts and analytics
+- Backend integration (API + database)
+- User authentication
+
+---
+
+## 👨‍💻 Author
+
+KAVYA D
+
+---
